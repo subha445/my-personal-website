@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 25px 20px;
 }
@@ -88,12 +88,25 @@ h2 {
   margin-bottom: 22px;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
 .card {
   background: linear-gradient(135deg,#1c1428,#100c19);
   border: 1px solid #7541a0;
   border-radius: 14px;
   padding: 25px;
   box-shadow: 0 0 20px #9333ea18;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #c084fc;
+  box-shadow: 0 0 22px #9333ea55;
 }
 
 .card h3 { color: #d8b4fe; }
@@ -101,11 +114,22 @@ h2 {
 .card p {
   color: #b9adca;
   line-height: 1.6;
+  min-height: 48px;
 }
 
 .card a {
-  color: #d8b4fe;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #9333ea;
+  color: white;
   text-decoration: none;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+.card a:hover {
+  background: #a855f7;
 }
 
 footer {
@@ -116,8 +140,9 @@ footer {
   margin-top: 60px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .hero { padding-top: 65px; }
+  .project-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -141,22 +166,58 @@ footer {
     Turning ideas into digital experiences.
   </p>
 
-  <a class="button"
-     href="#projects">Explore Projects ↓</a>
+  <a class="button" href="#projects">
+    Explore Projects ↓
+  </a>
 </div>
 
 <section id="projects">
   <h2>Featured Projects ✦</h2>
 
-  <div class="card">
-    <h3>01 / Personal Website</h3>
-    <p>
-      A personal portfolio website
-      created using HTML and CSS.
-    </p>
-    <a href="https://github.com/subha445/my-personal-website">
-      View on GitHub ↗
-    </a>
+  <div class="project-grid">
+
+    <div class="card">
+      <h3>01 / Student Management System</h3>
+      <p>A system to manage student details and records.</p>
+      <a href="https://github.com/subha445/Student-Management-System" target="_blank">View Project ↗</a>
+    </div>
+
+    <div class="card">
+      <h3>02 / Expense Tracker</h3>
+      <p>Track daily expenses and manage spending.</p>
+      <a href="https://github.com/subha445/Expense---Tracker" target="_blank">View Project ↗</a>
+    </div>
+
+    <div class="card">
+      <h3>03 / Quiz App</h3>
+      <p>Test your knowledge with interactive quizzes.</p>
+      <a href="https://github.com/subha445/Quiz-App-Create" target="_blank">View Project ↗</a>
+    </div>
+
+    <div class="card">
+      <h3>04 / Personal Website</h3>
+      <p>A portfolio website built using HTML and CSS.</p>
+      <a href="https://github.com/subha445/my-personal-website" target="_blank">View Project ↗</a>
+    </div>
+
+    <div class="card">
+      <h3>05 / Calculator App</h3>
+      <p>Perform everyday mathematical calculations.</p>
+      <a href="https://github.com/subha445/calculator-app" target="_blank">View Project ↗</a>
+    </div>
+
+    <div class="card">
+      <h3>06 / Weather App</h3>
+      <p>Check weather information with a simple interface.</p>
+      <a href="https://github.com/subha445/Weather---App" target="_blank">View Project ↗</a>
+    </div>
+
+    <div class="card">
+      <h3>07 / Todo App</h3>
+      <p>Organise tasks and keep track of your activities.</p>
+      <a href="https://github.com/subha445/Todo---app" target="_blank">View Project ↗</a>
+    </div>
+
   </div>
 </section>
 
@@ -164,9 +225,7 @@ footer {
   <h2>Connect With Me</h2>
   <div class="card">
     <p>Want to explore my coding journey?</p>
-    <a href="https://github.com/subha445">
-      Visit My GitHub ↗
-    </a>
+    <a href="https://github.com/subha445" target="_blank">Visit My GitHub ↗</a>
   </div>
 </section>
 
