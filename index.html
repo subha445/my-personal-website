@@ -4,82 +4,120 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Subha | Developer Portfolio</title>
+<title>Subha | Developer</title>
 
 <style>
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
-  padding: 40px 20px;
-  background: #090710;
+  background: #080610;
   color: white;
   font-family: Arial, sans-serif;
 }
 
 .container {
-  max-width: 850px;
+  max-width: 900px;
   margin: auto;
+  padding: 25px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #30213f;
+}
+
+.logo {
+  color: #c084fc;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #d8b4fe;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 85px 10px 65px;
+  text-align: center;
+}
+
+.tag {
+  color: #c084fc;
+  border: 1px solid #8b5cf6;
+  padding: 9px 16px;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 13px;
 }
 
 h1 {
-  font-size: 36px;
-  color: #c084fc;
-  margin-bottom: 10px;
+  font-size: clamp(38px, 9vw, 65px);
+  margin: 25px 0 12px;
+  text-shadow: 0 0 25px #9333ea;
 }
 
-.subtitle {
-  color: #aaa0b9;
-  margin-bottom: 35px;
+h1 span { color: #c084fc; }
+
+.hero p {
+  color: #b9adca;
+  line-height: 1.7;
+  font-size: 16px;
 }
+
+.button {
+  display: inline-block;
+  padding: 13px 22px;
+  margin-top: 18px;
+  background: #9333ea;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 0 18px #9333ea66;
+}
+
+section { margin: 45px 0; }
 
 h2 {
   color: #d8b4fe;
-  margin-bottom: 20px;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
+  font-size: 27px;
+  margin-bottom: 22px;
 }
 
 .card {
-  background: #171222;
-  border: 1px solid #58368a;
-  border-radius: 12px;
-  padding: 22px;
+  background: linear-gradient(135deg,#1c1428,#100c19);
+  border: 1px solid #7541a0;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 0 20px #9333ea18;
 }
 
-.card h3 {
-  color: #d8b4fe;
-}
+.card h3 { color: #d8b4fe; }
 
 .card p {
-  color: #c5bdd0;
-  line-height: 1.5;
+  color: #b9adca;
+  line-height: 1.6;
 }
 
-.btn {
-  display: inline-block;
-  background: #9333ea;
-  color: white;
-  padding: 11px 18px;
-  border-radius: 7px;
+.card a {
+  color: #d8b4fe;
   text-decoration: none;
-  margin-top: 10px;
-}
-
-.btn:hover {
-  background: #a855f7;
 }
 
 footer {
   text-align: center;
-  color: #81758e;
-  margin-top: 45px;
+  color: #887a99;
+  border-top: 1px solid #30213f;
+  padding: 25px 0;
+  margin-top: 60px;
+}
+
+@media (max-width: 500px) {
+  .hero { padding-top: 65px; }
 }
 </style>
 </head>
@@ -87,30 +125,53 @@ footer {
 <body>
 <div class="container">
 
-<h1>Subha.dev</h1>
-<p class="subtitle">
-Web Developer | Projects & Experiments
-</p>
+<nav>
+  <div class="logo">Subha.dev</div>
+  <a href="https://github.com/subha445">GitHub ↗</a>
+</nav>
 
-<h2>Featured Projects</h2>
+<div class="hero">
+  <div class="tag">✦ DEVELOPER PORTFOLIO</div>
 
-<div class="projects">
+  <h1>Building the <span>Future.</span></h1>
 
-<div class="card">
-<h3>My Personal Website</h3>
-<p>A personal website built using HTML and CSS.</p>
-<a class="btn"
-href="https://github.com/subha445/my-personal-website">
-View on GitHub
-</a>
+  <p>
+    Hi, I'm Subha.<br>
+    Web Developer | Tech Enthusiast<br>
+    Turning ideas into digital experiences.
+  </p>
+
+  <a class="button"
+     href="#projects">Explore Projects ↓</a>
 </div>
 
-<!-- Add more project cards here -->
+<section id="projects">
+  <h2>Featured Projects ✦</h2>
 
-</div>
+  <div class="card">
+    <h3>01 / Personal Website</h3>
+    <p>
+      A personal portfolio website
+      created using HTML and CSS.
+    </p>
+    <a href="https://github.com/subha445/my-personal-website">
+      View on GitHub ↗
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2>Connect With Me</h2>
+  <div class="card">
+    <p>Want to explore my coding journey?</p>
+    <a href="https://github.com/subha445">
+      Visit My GitHub ↗
+    </a>
+  </div>
+</section>
 
 <footer>
-© 2026 Subha | Developer Portfolio
+  © 2026 Subha.dev | Built with passion 💜
 </footer>
 
 </div>
