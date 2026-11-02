@@ -1,59 +1,118 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Subha - Web Developer</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
-        
-        body { 
-            background: #0a0a0a;
-            font-family: 'Orbitron', sans-serif; 
-            color: #00f0ff; 
-            text-align: center; 
-            padding: 100px 20px;
-            margin: 0;
-        }
-        .box { 
-            background: rgba(0, 240, 255, 0.05);
-            padding: 60px 40px;
-            border-radius: 15px;
-            max-width: 600px;
-            margin: 0 auto;
-            border: 2px solid #00f0ff;
-            box-shadow: 0 0 30px #00f0ff;
-        }
-        h1 { 
-            font-size: 50px; 
-            margin-bottom: 20px;
-            text-shadow: 0 0 20px #00f0ff;
-        }
-        p {
-            font-size: 20px;
-            color: #fff;
-            line-height: 1.6;
-        }
-        .btn { 
-            display: inline-block;
-            background: transparent;
-            color: #00f0ff;
-            padding: 15px 35px;
-            text-decoration: none;
-            border-radius: 8px;
-            margin-top: 30px;
-            font-size: 18px;
-            border: 2px solid #00f0ff;
-            transition: 0.3s;
-        }
-        .btn:hover {
-            background: #00f0ff;
-            color: #0a0a0a;
-            box-shadow: 0 0 20px #00f0ff;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subha | Developer Portfolio</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background: #090710;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 850px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 36px;
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #aaa0b9;
+  margin-bottom: 35px;
+}
+
+h2 {
+  color: #d8b4fe;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #171222;
+  border: 1px solid #58368a;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.card h3 {
+  color: #d8b4fe;
+}
+
+.card p {
+  color: #c5bdd0;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  background: #9333ea;
+  color: white;
+  padding: 11px 18px;
+  border-radius: 7px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #a855f7;
+}
+
+footer {
+  text-align: center;
+  color: #81758e;
+  margin-top: 45px;
+}
+</style>
 </head>
+
 <body>
-    <div class="box">
-        <h1>Hi, I am Subha 👋</h1>
-        <p>10th Student | Aspiring Web Developer</p>
-        <p>Building my dream, one line of code at a time</p>
-        <a href="about.html" class="btn">Know about me
+<div class="container">
+
+<h1>Subha.dev</h1>
+<p class="subtitle">
+Web Developer | Projects & Experiments
+</p>
+
+<h2>Featured Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>My Personal Website</h3>
+<p>A personal website built using HTML and CSS.</p>
+<a class="btn"
+href="https://github.com/subha445/my-personal-website">
+View on GitHub
+</a>
+</div>
+
+<!-- Add more project cards here -->
+
+</div>
+
+<footer>
+© 2026 Subha | Developer Portfolio
+</footer>
+
+</div>
+</body>
+</html>
