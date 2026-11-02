@@ -24,9 +24,7 @@ This website was created to showcase my projects, skills, and learning journey i
 - Calculator App
 - Quiz App
 
-## Screenshot
 
-![Personal Website](screenshot.png)
 
 ## Live Website
 
