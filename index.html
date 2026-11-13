@@ -4,296 +4,522 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Subha (subha445) | Developer Portfolio</title>
+<title>Subha | Developer Portfolio</title>
 
-<meta name="description" content="Welcome to Subha's developer portfolio. Explore projects, coding journey and web development work by Subha, also known as subha445 on GitHub.">
-
+<meta name="description" content="Explore Subha's developer portfolio, GitHub projects, coding journey and software development experiments.">
 <meta name="author" content="Subha">
 <meta name="robots" content="index, follow">
+
 <meta name="google-site-verification" content="KqVbK69AZ66ZSU2BNMhf0AfTOLJhNnZWCrYG8u1agQE">
 
 <link rel="canonical" href="https://subha445.github.io/my-personal-website/">
 
-<meta property="og:title" content="Subha (subha445) | Developer Portfolio">
-<meta property="og:description" content="Explore Subha's coding journey, projects and developer portfolio.">
+<meta property="og:title" content="Subha | Developer Portfolio">
+<meta property="og:description" content="Discover my projects, creativity and coding journey.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://subha445.github.io/my-personal-website/">
 
 <meta name="theme-color" content="#080610">
 
-<!-- Website identity information -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Subha",
-  "alternateName": "subha445",
-  "url": "https://subha445.github.io/my-personal-website/",
-  "sameAs": [
-    "https://github.com/subha445"
-  ],
-  "jobTitle": "Aspiring Software Developer"
+ "@context":"https://schema.org",
+ "@type":"Person",
+ "name":"Subha",
+ "alternateName":"subha445",
+ "url":"https://subha445.github.io/my-personal-website/",
+ "sameAs":["https://github.com/subha445"],
+ "jobTitle":"Aspiring Software Developer"
 }
 </script>
 
 <style>
-* { box-sizing: border-box; }
+* {
+ box-sizing:border-box;
+ margin:0;
+ padding:0;
+}
 
-html { scroll-behavior: smooth; }
+html {
+ scroll-behavior:smooth;
+}
 
 body {
-  margin: 0;
-  background: #080610;
-  color: white;
-  font-family: Arial, sans-serif;
+ background:#080610;
+ color:#fff;
+ font-family:Arial,sans-serif;
+ overflow-x:hidden;
+}
+
+body::before {
+ content:"";
+ position:fixed;
+ inset:0;
+ background:
+ radial-gradient(circle at 15% 15%,#54218b30,transparent 35%),
+ radial-gradient(circle at 85% 55%,#8b32c520,transparent 35%);
+ pointer-events:none;
+ z-index:-1;
 }
 
 .container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 25px 20px;
+ max-width:1100px;
+ margin:auto;
+ padding:20px;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-  border-bottom: 1px solid #30213f;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:18px 0;
+ border-bottom:1px solid #382348;
 }
 
 .logo {
-  color: #c084fc;
-  font-size: 22px;
-  font-weight: bold;
+ color:#d8a5ff;
+ font-size:23px;
+ font-weight:bold;
+ letter-spacing:1px;
 }
 
 nav a {
-  color: #d8b4fe;
-  text-decoration: none;
+ color:#d8b4fe;
+ text-decoration:none;
 }
 
 .hero {
-  padding: 85px 10px 65px;
-  text-align: center;
+ text-align:center;
+ padding:100px 10px 90px;
 }
 
 .tag {
-  color: #c084fc;
-  border: 1px solid #8b5cf6;
-  padding: 9px 16px;
-  border-radius: 30px;
-  display: inline-block;
-  font-size: 13px;
+ display:inline-block;
+ padding:10px 18px;
+ border:1px solid #a855f7;
+ border-radius:30px;
+ color:#d8b4fe;
+ font-size:12px;
+ letter-spacing:2px;
 }
 
-h1 {
-  font-size: clamp(38px, 9vw, 65px);
-  margin: 25px 0 12px;
-  text-shadow: 0 0 25px #9333ea;
+.hero h1 {
+ font-size:clamp(42px,9vw,76px);
+ margin:27px 0 15px;
 }
 
-h1 span { color: #c084fc; }
+.hero h1 span {
+ color:#c084fc;
+ text-shadow:0 0 30px #9333ea;
+}
 
 .hero p {
-  color: #b9adca;
-  line-height: 1.7;
-  font-size: 16px;
+ color:#b9adca;
+ line-height:1.8;
+ font-size:16px;
 }
 
 .username {
-  color: #c084fc;
-  font-size: 14px;
-  margin-top: 12px;
-  letter-spacing: 1px;
+ color:#c084fc;
+ margin-top:20px;
+ letter-spacing:2px;
+ font-size:13px;
 }
 
 .button {
-  display: inline-block;
-  padding: 13px 22px;
-  margin-top: 18px;
-  background: #9333ea;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  box-shadow: 0 0 18px #9333ea66;
+ display:inline-block;
+ margin-top:27px;
+ padding:14px 25px;
+ border-radius:9px;
+ background:linear-gradient(120deg,#9333ea,#6d28d9);
+ color:white;
+ text-decoration:none;
+ box-shadow:0 0 25px #9333ea55;
+ transition:.3s;
 }
 
-section { margin: 45px 0; }
+.button:hover {
+ transform:translateY(-4px);
+ box-shadow:0 0 35px #9333eaaa;
+}
+
+section {
+ margin:65px 0;
+ scroll-margin-top:25px;
+}
+
+.section-heading {
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:15px;
+ margin-bottom:27px;
+}
 
 h2 {
-  color: #d8b4fe;
-  font-size: 27px;
-  margin-bottom: 22px;
+ color:#d8b4fe;
+ font-size:29px;
+}
+
+.section-count {
+ color:#a78bfa;
+ font-size:12px;
+ letter-spacing:2px;
 }
 
 .project-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:22px;
 }
 
 .card {
-  background: linear-gradient(135deg,#1c1428,#100c19);
-  border: 1px solid #7541a0;
-  border-radius: 14px;
-  padding: 25px;
-  box-shadow: 0 0 20px #9333ea18;
-  transition: 0.3s;
+ position:relative;
+ overflow:hidden;
+ background:linear-gradient(140deg,#21152e,#100c19);
+ border:1px solid #56376d;
+ border-radius:16px;
+ padding:27px;
+ transition:.3s;
+}
+
+.card::before {
+ content:"";
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:2px;
+ background:linear-gradient(90deg,#9333ea,#d8b4fe,transparent);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  border-color: #c084fc;
-  box-shadow: 0 0 22px #9333ea55;
+ transform:translateY(-7px);
+ border-color:#c084fc;
+ box-shadow:0 10px 35px #9333ea25;
 }
 
-.card h3 { color: #d8b4fe; }
+.project-number {
+ color:#a855f7;
+ font-size:12px;
+ letter-spacing:2px;
+ margin-bottom:17px;
+}
+
+.card h3 {
+ color:#ead5ff;
+ font-size:21px;
+ margin-bottom:12px;
+}
 
 .card p {
-  color: #b9adca;
-  line-height: 1.6;
-  min-height: 48px;
+ color:#b9adca;
+ line-height:1.7;
+ font-size:14px;
+ min-height:50px;
+}
+
+.project-type {
+ display:inline-block;
+ color:#c4a1e8;
+ border:1px solid #65417e;
+ border-radius:20px;
+ padding:6px 10px;
+ font-size:11px;
+ margin-top:17px;
 }
 
 .card a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #9333ea;
-  color: white;
-  text-decoration: none;
-  border-radius: 7px;
-  font-size: 14px;
+ display:inline-block;
+ margin-top:20px;
+ padding:11px 17px;
+ background:#9333ea;
+ color:white;
+ border-radius:7px;
+ text-decoration:none;
+ font-size:13px;
+ transition:.3s;
 }
 
-.card a:hover { background: #a855f7; }
+.card a:hover {
+ background:#a855f7;
+}
+
+.about-card {
+ background:linear-gradient(140deg,#21152e,#100c19);
+ border:1px solid #56376d;
+ border-radius:16px;
+ padding:30px;
+}
+
+.about-card p {
+ color:#c4b5d5;
+ line-height:1.9;
+}
+
+.stats {
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:15px;
+ margin-top:25px;
+}
+
+.stat {
+ padding:20px 10px;
+ background:#1b1226;
+ border:1px solid #56376d;
+ border-radius:12px;
+ text-align:center;
+}
+
+.stat strong {
+ display:block;
+ color:#d8b4fe;
+ font-size:25px;
+ margin-bottom:8px;
+}
+
+.stat span {
+ color:#a99ab8;
+ font-size:12px;
+}
+
+.connect {
+ text-align:center;
+}
+
+.connect p {
+ color:#b9adca;
+ margin-top:15px;
+ line-height:1.7;
+}
 
 footer {
-  text-align: center;
-  color: #887a99;
-  border-top: 1px solid #30213f;
-  padding: 25px 0;
-  margin-top: 60px;
+ text-align:center;
+ color:#887a99;
+ border-top:1px solid #30213f;
+ padding:30px 10px;
+ margin-top:70px;
+ font-size:13px;
 }
 
-@media (max-width: 600px) {
-  .hero { padding-top: 65px; }
-  .project-grid { grid-template-columns: 1fr; }
+@media(max-width:650px) {
+ .hero {
+  padding:70px 5px;
+ }
+ .project-grid {
+  grid-template-columns:1fr;
+ }
+ .stats {
+  grid-template-columns:1fr;
+ }
+ .section-heading {
+  align-items:flex-start;
+  flex-direction:column;
+ }
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
 <nav>
-  <div class="logo">Subha.dev</div>
-  <a href="https://github.com/subha445"
-     target="_blank" rel="noopener noreferrer">
-    GitHub ↗
-  </a>
+ <div class="logo">Subha.dev</div>
+ <a href="https://github.com/subha445" target="_blank" rel="noopener noreferrer">
+  GitHub ↗
+ </a>
 </nav>
 
 <main>
+
 <div class="hero">
-  <div class="tag">✦ DEVELOPER PORTFOLIO</div>
 
-  <h1>Hi, I'm <span>Subha.</span></h1>
+ <div class="tag">✦ PERSONAL DEVELOPER PORTFOLIO</div>
 
-  <p>
-    Aspiring Software Developer | Tech Enthusiast<br>
-    Building projects and turning ideas into digital experiences.
-  </p>
+ <h1>Hi, I'm <span>Subha.</span></h1>
 
-  <div class="username">GITHUB USERNAME: @subha445</div>
+ <p>
+  Aspiring Software Developer | Tech Enthusiast<br>
+  Exploring technology, building projects and transforming ideas into reality.
+ </p>
 
-  <a class="button" href="#projects">
-    Explore Projects ↓
-  </a>
+ <div class="username">GITHUB USERNAME: @subha445</div>
+
+ <a class="button" href="#projects">EXPLORE MY UNIVERSE ↓</a>
+
 </div>
 
 <section id="projects">
-  <h2>Featured Projects ✦</h2>
 
-  <div class="project-grid">
+ <div class="section-heading">
+  <h2>My Projects ✦</h2>
+  <span class="section-count">11 PROJECTS / MY JOURNEY</span>
+ </div>
 
-    <div class="card">
-      <h3>01 / Student Management System</h3>
-      <p>A system to manage student details and records.</p>
-      <a href="https://github.com/subha445/Student-Management-System" target="_blank" rel="noopener noreferrer">View Project ↗</a>
-    </div>
+ <div class="project-grid">
 
-    <div class="card">
-      <h3>02 / Expense Tracker</h3>
-      <p>Track daily expenses and manage spending.</p>
-      <a href="https://github.com/subha445/Expense---Tracker" target="_blank" rel="noopener noreferrer">View Project ↗</a>
-    </div>
-
-    <div class="card">
-      <h3>03 / Quiz App</h3>
-      <p>Test your knowledge with interactive quizzes.</p>
-      <a href="https://github.com/subha445/Quiz-App-Create" target="_blank" rel="noopener noreferrer">View Project ↗</a>
-    </div>
-
-    <div class="card">
-      <h3>04 / Personal Website</h3>
-      <p>A portfolio website built using HTML and CSS.</p>
-      <a href="https://github.com/subha445/my-personal-website" target="_blank" rel="noopener noreferrer">View Project ↗</a>
-    </div>
-
-    <div class="card">
-      <h3>05 / Calculator App</h3>
-      <p>Perform everyday mathematical calculations.</p>
-      <a href="https://github.com/subha445/calculator-app" target="_blank" rel="noopener noreferrer">View Project ↗</a>
-    </div>
-
-    <div class="card">
-      <h3>06 / Weather App</h3>
-      <p>Check weather information with a simple interface.</p>
-      <a href="https://github.com/subha445/Weather---App" target="_blank" rel="noopener noreferrer">View Project ↗</a>
-    </div>
-
-    <div class="card">
-      <h3>07 / Todo App</h3>
-      <p>Organise tasks and keep track of your activities.</p>
-      <a href="https://github.com/subha445/Todo---app" target="_blank" rel="noopener noreferrer">View Project ↗</a>
-    </div>
-
+  <div class="card">
+   <div class="project-number">PROJECT 01 / CHRONOVA</div>
+   <h3>CHRONOVA</h3>
+   <p>A creative digital project exploring technology and interactive experiences.</p>
+   <span class="project-type">Creative Project</span>
+   <br>
+   <a href="https://github.com/subha445?tab=repositories" target="_blank" rel="noopener noreferrer">Find Repository ↗</a>
   </div>
+
+  <div class="card">
+   <div class="project-number">PROJECT 02 / FASHION</div>
+   <h3>Fashion Studio</h3>
+   <p>A fashion design experience featuring creative 2D and 3D exploration.</p>
+   <span class="project-type">Design / Web Development</span>
+   <br>
+   <a href="https://github.com/subha445/Fashion-Studio" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+  </div>
+
+  <div class="card">
+   <div class="project-number">PROJECT 03 / MANAGEMENT</div>
+   <h3>Student Management System</h3>
+   <p>A digital system designed to organise and manage student information.</p>
+   <span class="project-type">Management System</span>
+   <br>
+   <a href="https://github.com/subha445/Student-Management-System" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+  </div>
+
+  <div class="card">
+   <div class="project-number">PROJECT 04 / PRODUCTIVITY</div>
+   <h3>Todo App</h3>
+   <p>A task management application for organising everyday activities.</p>
+   <span class="project-type">Productivity</span>
+   <br>
+   <a href="https://github.com/subha445/Todo---app" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+  </div>
+
+  <div class="card">
+   <div class="project-number">PROJECT 05 / FINANCE</div>
+   <h3>Expense Tracker</h3>
+   <p>Track income and expenses through a simple digital finance dashboard.</p>
+   <span class="project-type">Finance / Web App</span>
+   <br>
+   <a href="https://github.com/subha445/Expense---Tracker" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+  </div>
+
+  <div class="card">
+   <div class="project-number">PROJECT 06 / CITY</div>
+   <h3>Dream City</h3>
+   <p>Explore a digital city concept with buildings, houses and interactive environments.</p>
+   <span class="project-type">Interactive Experience</span>
+   <br>
+   <a href="https://github.com/subha445/dream-city" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+  </div>
+
+  <div class="card">
+   <div class="project-number">PROJECT 07 / AI LEARNING</div>
+   <h3>Knowly AI</h3>
+   <p>An AI-powered learning platform concept built to explore digital education.</p>
+   <span class="project-type">Education / AI</span>
+   <br>
+   <a href="https://github.com/subha445/knowly-ai-learning-platform" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+  </div>
+
+  <div class="card">
+   <div class="project-number">PROJECT 08 / SPACE</div>
+   <h3>Nexora Space Explorer</h3>
+   <p>A futuristic space exploration experience inspired by the universe.</p>
+   <span class="project-type">Space / Interactive Web</span>
+   <br>
+   <a href="https://github.com/subha445/nexora-space-explorer" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+  </div>
+
+  <div class="card">
+   <div class="project-number">PROJECT 09 / CALCULATIONS</div>
+   <h3>Calculator App</h3>
+   <p>A calculator application for everyday mathematical operations.</p>
+   <span class="project-type">Utility App</span>
+   <br>
+   <a href="https://github.com/subha445/calculator-app" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+  </div>
+
+  <div class="card">
+   <div class="project-number">PROJECT 10 / WEATHER</div>
+   <h3>Weather App</h3>
+   <p>A weather application designed to display weather information.</p>
+   <span class="project-type">Weather / Utility</span>
+   <br>
+   <a href="https://github.com/subha445/Weather---App" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+  </div>
+
+  <div class="card">
+   <div class="project-number">PROJECT 11 / PORTFOLIO</div>
+   <h3>My Personal Website</h3>
+   <p>My developer portfolio showcasing my projects and coding journey.</p>
+   <span class="project-type">Portfolio / HTML / CSS</span>
+   <br>
+   <a href="https://github.com/subha445/my-personal-website" target="_blank" rel="noopener noreferrer">View Project ↗</a>
+  </div>
+
+ </div>
 </section>
 
 <section id="about">
-  <h2>About Subha ✦</h2>
-  <div class="card">
-    <p>
-      I'm Subha, known as subha445 on GitHub.
-      I'm interested in software development, programming
-      and creating useful digital projects.
-    </p>
-    <a href="https://github.com/subha445"
-       target="_blank" rel="noopener noreferrer">
-      Explore My GitHub Profile ↗
-    </a>
+
+ <h2>About Me ✦</h2>
+
+ <div class="about-card">
+  <p>
+   I'm Subha, also known as <strong>@subha445</strong> on GitHub.
+   I'm an aspiring software developer passionate about programming,
+   technology and creating digital experiences.
+   <br><br>
+   Every project is another opportunity to learn, experiment,
+   solve problems and grow as a developer.
+  </p>
+
+  <div class="stats">
+   <div class="stat">
+    <strong>11+</strong>
+    <span>Listed Projects</span>
+   </div>
+
+   <div class="stat">
+    <strong>∞</strong>
+    <span>Ideas to Explore</span>
+   </div>
+
+   <div class="stat">
+    <strong>01</strong>
+    <span>Developer Journey</span>
+   </div>
   </div>
+ </div>
+
 </section>
 
-<section>
-  <h2>Connect With Me</h2>
-  <div class="card">
-    <p>Want to explore my coding journey?</p>
-    <a href="https://github.com/subha445"
-       target="_blank" rel="noopener noreferrer">
-      Visit My GitHub ↗
-    </a>
-  </div>
+<section class="connect">
+
+ <h2>Let's Connect ✦</h2>
+
+ <p>
+  Explore my repositories and follow my journey as I continue building.
+ </p>
+
+ <a class="button"
+ href="https://github.com/subha445"
+ target="_blank"
+ rel="noopener noreferrer">
+  VISIT MY GITHUB PROFILE ↗
+ </a>
+
 </section>
+
 </main>
 
 <footer>
-  © 2026 Subha.dev | Built with passion 💜
+ © 2026 Subha.dev | Designed & Built by Subha 💜
 </footer>
 
 </div>
+
 </body>
 </html>
